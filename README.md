@@ -1,73 +1,50 @@
-Welcome to the ClimateViz project
+# ClimateViz Project
 
-Thank you for joining our effort! Together, we aim to enhance understanding and address misinformation in Climate Science.
+Welcome to the ClimateViz Project on GitHub! Our mission is to enhance understanding and address misinformation within Climate Science through the power of data visualization. By joining us, you're contributing to a vital effort in combating climate misinformation with accuracy and precision.
 
-We've amassed a comprehensive dataset of Climate Science Graphics, rich with reliable information. Our goal is to create an automated fact-checking system to tackle climate misinformation—a challenging but crucial endeavour. To achieve this, we're gathering detailed, accurate manual descriptions of our dataset.
+## Project Overview
 
-Understanding the Task
+The ClimateViz project focuses on developing an automated fact-checking system that leverages a comprehensive dataset of Climate Science Graphics. These graphics are rich with reliable information and are crucial in our fight against climate misinformation.
 
-We need to collect detailed, objective descriptions for each graphic.
+### Our Goal
 
-Thus, your descriptions should be impartial and based on the visual content of the graphic. Avoid inferring intentions, making assumptions, or including subjective judgments.
+Our primary goal is to create detailed, objective, and accurate descriptions for each graphic in our dataset. These descriptions are essential in developing an effective automated fact-checking system to identify and correct misconceptions in Climate Science.
 
-Before you begin, ensure you have a basic understanding of climate science concepts. This knowledge will help you accurately interpret the graphics.
+## Contributing Guidelines
 
-Guidance on Finding the Title
+We're thrilled to have you contribute to this project! Here are a few guidelines to help you get started:
 
-Look at the Top: Titles are often located at the top of the graphic. They may be in a larger font size compared to other text elements to stand out.
+### Understanding the Task
 
-Check the Bottom: If not found at the top, some graphics may have their titles at the bottom, especially if it is an infographic or a detailed diagram.
+- **Objective Descriptions**: We aim for impartiality in our descriptions. Focus solely on the visual content without inferring intentions or making subjective judgments.
 
-Examine the Surrounding Text: For graphics embedded in documents or web pages, the title might not be on the graphic itself but in the accompanying text immediately before or after the graphic.
+- **Climate Science Knowledge**: A basic understanding of climate science is beneficial. It will aid in accurately interpreting and describing the graphics.
 
-Consider the Context: In cases where the graphic is part of a larger presentation or document, the title of the section it is in might serve as the title for the graphic, especially if individual graphics are not labelled. 
+### How to Find Titles and Sources
 
-Guidance on Finding the Source
+- **Titles**: Often found at the top or bottom of the graphic, titles are crucial for context. They might also be indicated in accompanying text or the section title if the graphic is part of a larger document or presentation.
 
-Authors and Credits: Begin by looking for any names or entities credited with creating the graphic. This could be in the form of "Created by [Name]" or "[Name] (Year)". When a graphic lists authors or creators, such as "Shwed and Bearman (2010)," please include this information exactly as it appears.
+- **Sources**: Look for authors, credits, or entities associated with the graphic's creation. Source information is typically located below the graphic, within the image itself, or in the accompanying text. If multiple sources are mentioned, include all, and use "NA" if the source is uncertain or missing.
 
-Combining Information: If the graphic includes both author names and credit to an organisation or publication, separate these pieces of information with a comma. For example, "Shwed and Bearman (2010), National Geographic".
+### Describing Climate Science Graphics
 
-Location of Source Information: Source information can typically be found in the following places:
+When describing graphics, focus on the following elements:
 
-Below the Graphic: Often, the source is cited directly below the image.
-On the Graphic:  Some graphics may include the source or authorship within the image itself, particularly in the corner or along the edges.
-Accompanying Text: For graphics embedded in documents or webpages, source information might be in the accompanying text or caption, rather than on the graphic.
+- **Axes Labels and Units**: Clearly identify what each axis represents, including any units of measurement.
+- **Data Trends**: Describe significant trends shown in the graphic.
+- **Colours and Symbols**: Explain the meaning of colours and symbols used.
+- **Overall Message**: Summarise the main conclusion or message conveyed by the graphic.
+- **Detail and Specificity**: Provide detailed descriptions to allow comprehension without seeing the graphic.
+- **Complex Graphics**: Break down complex graphics into sections, covering each part before summarising the overall message.
 
+## Examples
 
-Use Caution with Multiple Sources: If a graphic mentions multiple sources or contributions (e.g., data from one source, graphic created by another), include all mentioned parties, separating each with a comma.
+For detailed examples and further guidance on contributing descriptions, please visit our [Zooniverse project page](https://www.zooniverse.org/projects/albasu/climateviz-from-graphics-to-understanding).
 
-If Unsure, Use "NA": Accuracy is crucial. If you cannot confidently identify the source information or if it appears to be missing, please use "NA". This helps maintain the integrity of our data collection process.
+## Join Us
 
-Describing Key Features and Data Presentation of Climate Science Graphics
+Your contribution can significantly impact the fight against climate misinformation. Let's work together to make a difference with the ClimateViz project. Thank you for your support and contributions!
 
-Your task is to objectively describe the important elements within each graphic. Your descriptions should be clear, concise, and in English. Focus on accurately conveying the graphic's content, which will require detailing the **axes labels, data trends, use of colours and symbols**, and **summarising the overall message** of the graphic.
+For any questions or further information, please feel free to open an issue on this repository or contact the project maintainers directly.
 
-Axes Labels and Units: 
-Clearly identify what each axis represents, including any units of measurement. For example, "The X-axis represents years from 2000 to 2020, and the Y-axis measures temperature in degrees Celsius."
-Data Trends:
-
-Describe significant trends shown in the graphic. 
-For example, "A bar graph illustrates a steady increase in global carbon emissions over the past two decades."
-
-Colours and Symbols:
-Explain the meaning of colours and symbols used in the graphic. For instance, "Red circles represent high-emission countries, while blue circles represent low-emission countries."
-
-Overall Message:
-Summarise the main conclusion or message conveyed by the graphic. This might be, "A line graph displays rising ocean temperatures over 20 years, highlighting a trend towards global warming."
-
-Detail and Specificity:
-Provide enough detail to **allow someone who cannot see the graphic to understand its key points**. This includes mentioning any notable annotations, legends, or keys that are part of the graphic.
-
-Summarising Complex Graphics:
-For more complex graphics, break down your description into sections, covering each component part before summarising the overall message.
-
-Examples for Better Clarity:
-Correct: "The graphic uses a green line to show the increase in renewable energy production from 2000 to 2020, with annotations highlighting significant policy introductions."
-Avoid: "The graphic shows that renewable energy is becoming more popular because of policies."
-Example: There is a consistent upward trajectory of all datasets post-1970s.
-
-
-
-
-
+Let's collaborate to enhance public understanding of Climate Science and foster a well-informed community. Welcome aboard!
