@@ -1,50 +1,107 @@
-# ClimateViz Project
+# 🌍 ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts
 
-Welcome to the ClimateViz Project on GitHub! Our mission is to enhance understanding and address misinformation within Climate Science through the power of data visualization. By joining us, you're contributing to a vital effort in combating climate misinformation with accuracy and precision.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Project Overview
+**ClimateViz** is the first large-scale benchmark for scientific fact-checking grounded in real-world, expert-curated climate charts. It challenges models to perform complex statistical reasoning over visual data, supporting structured explanation via knowledge graphs. The benchmark contains **49,862 claims** aligned with **2,896 scientific charts**, each annotated with a fact-checking label (`support`, `refute`, `not enough information`) and a structured explanation graph.
 
-The ClimateViz project focuses on developing an automated fact-checking system that leverages a comprehensive dataset of Climate Science Graphics. These graphics are rich with reliable information and are crucial in our fight against climate misinformation.
+## 📌 Key Features
 
-### Our Goal
+- **Real-World Climate Charts**: Sourced from institutions like NOAA, Met Office, and Copernicus.
+- **Rich Claim Types**: Includes human-authored true claims and GPT-generated false and NEI (Not Enough Information) claims.
+- **Structured Explanations**: Knowledge Graphs (KGs) of canonicalized (subject, relation, object) triplets.
+- **High Annotation Quality**: Annotated via a Zooniverse campaign, verified by domain experts.
+- **Multimodal Setup**: Supports both image-text and table-text reasoning tasks.
 
-Our primary goal is to create detailed, objective, and accurate descriptions for each graphic in our dataset. These descriptions are essential in developing an effective automated fact-checking system to identify and correct misconceptions in Climate Science.
+## 📊 Chart Sources
 
-## Contributing Guidelines
+All charts included in the **ClimateViz** benchmark are sourced from publicly available, expert-curated scientific platforms. The dataset draws on high-quality climate visualizations from the following organizations:
 
-We're thrilled to have you contribute to this project! Here are a few guidelines to help you get started:
+- **🌐 NOAA (National Oceanic and Atmospheric Administration)**  
+  [https://www.noaa.gov/](https://www.noaa.gov/)  
+  Provides authoritative data on global and regional climate trends, including temperature anomalies, sea level, and CO₂.
 
-### Understanding the Task
+- **🇬🇧 UK Met Office**  
+  [https://www.metoffice.gov.uk/](https://www.metoffice.gov.uk/)  
+  The UK’s national weather and climate service, offering historical climate records and projections.
 
-- **Objective Descriptions**: We aim for impartiality in our descriptions. Focus solely on the visual content without inferring intentions or making subjective judgments.
+- **🇪🇺 Copernicus Climate Change Service (C3S)**  
+  [https://www.copernicus.eu/](https://www.copernicus.eu/)  
+  Delivers open-access climate datasets, visual indicators, and reports as part of the European Union’s Earth observation program.
 
-- **Climate Science Knowledge**: A basic understanding of climate science is beneficial. It will aid in accurately interpreting and describing the graphics.
+- **🛰️ NASA Earth Observatory**  
+  [https://earthobservatory.nasa.gov/](https://earthobservatory.nasa.gov/)  
+  Hosts satellite-based scientific visualizations and climate narratives covering cryosphere, ocean, and atmosphere data.
 
-### How to Find Titles and Sources
+- **🌎 NOAA Climate.gov**  
+  [https://www.climate.gov/](https://www.climate.gov/)  
+  Educational and data-driven charts and maps used in public outreach and climate research.
 
-- **Titles**: Often found at the top or bottom of the graphic, titles are crucial for context. They might also be indicated in accompanying text or the section title if the graphic is part of a larger document or presentation.
+- **🌡️ Climate Reanalyzer (University of Maine)**  
+  [https://climatereanalyzer.org/](https://climatereanalyzer.org/)  
+  Offers reanalysis-based climate visualizations including global weather anomalies and time series trends.
 
-- **Sources**: Look for authors, credits, or entities associated with the graphic's creation. Source information is typically located below the graphic, within the image itself, or in the accompanying text. If multiple sources are mentioned, include all, and use "NA" if the source is uncertain or missing.
+All charts were used under open-access conditions and manually verified by experts during dataset curation. No proprietary or sensitive content was included in the benchmark.
 
-### Describing Climate Science Graphics
 
-When describing graphics, focus on the following elements:
+##  Dataset Overview
 
-- **Axes Labels and Units**: Clearly identify what each axis represents, including any units of measurement.
-- **Data Trends**: Describe significant trends shown in the graphic.
-- **Colours and Symbols**: Explain the meaning of colours and symbols used.
-- **Overall Message**: Summarise the main conclusion or message conveyed by the graphic.
-- **Detail and Specificity**: Provide detailed descriptions to allow comprehension without seeing the graphic.
-- **Complex Graphics**: Break down complex graphics into sections, covering each part before summarising the overall message.
+| Statistic               | Value         |
+|------------------------|---------------|
+| Supported claims       | 15,100        |
+| Refuted claims         | 19,504        |
+| NEI claims             | 15,258        |
+| Total claims           | 49,862        |
+| Avg. tokens per claim  | 19.0          |
+| Avg. claims per chart  | 17.2          |
 
-## Examples
+### Input Modalities
 
-For detailed examples and further guidance on contributing descriptions, please visit our [Zooniverse project page](https://www.zooniverse.org/projects/albasu/climateviz-from-graphics-to-understanding).
+- **CT** (Chart + Text): Chart image + caption + claim
+- **CTT** (Chart + Table + Text): Chart + DePlot-converted table + caption + claim
 
-## Join Us
+### Output Modes
 
-Your contribution can significantly impact the fight against climate misinformation. Let's work together to make a difference with the ClimateViz project. Thank you for your support and contributions!
+- **Label-Only**: Predict `support`, `refute`, or `NEI`
+- **Explanation-Augmented**: Generate knowledge graph triplets + label
 
-For any questions or further information, please feel free to open an issue on this repository or contact the project maintainers directly.
+## Tasks
 
-Let's collaborate to enhance public understanding of Climate Science and foster a well-informed community. Welcome aboard!
+1. **Claim Verification**: Does the claim match the chart data?
+2. **Explanation Generation**: Generate structured (h, r, t) triplets to justify predictions.
+
+## Reasoning Types Covered
+
+- Temporal comparison, value extraction, anomaly detection
+- Aggregation, spatial comparison, trend detection, uncertainty, and unit interpretation
+
+
+## Baselines & Benchmarks
+
+We evaluate:
+- Open-source models: LLaMA-4, InternVL 2.5, Qwen 2.5
+- Closed-source models: GPT-4o, Gemini 2.5, o3
+- Chart-specific models: Matcha variants (ChartQA, PlotQA)
+
+## Directory Structure
+
+The `data/` folder contains the main dataset files for ClimateViz. It includes the full dataset as well as official training, development, and test splits. 
+The `Code/` directory contains scripts for training, evaluation, and explanation generation over the ClimateViz dataset using state-of-the-art vision-language models.
+
+
+```bash
+data/
+├── ClimateViz.csv                # Full dataset with all claims and annotations
+├── ClimateViz_train.csv          # Training split (70%)
+├── ClimateViz_dev.csv            # Development/validation split (10%)
+├── ClimateViz_test.csv           # Test split (20%)
+├── annotated_reasoning.csv       # Manually labeled subset with reasoning types
+
+
+
+Code/
+├── matcha_finetune.py           # Fine-tune Matcha on ClimateViz fact-checking
+├── zeroshot.py                  # Run zero-shot evaluation with multimodal LLMs
+├── fewshot.py                   # Few-shot in-context prompting experiments
+├── knowledge_graph.py           # Generate and canonicalize KG-based explanations
+├── explanation_evaluation.py   # Evaluate generated triplets with BLEU, METEOR, etc.
+
