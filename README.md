@@ -89,7 +89,7 @@ The `Code/` directory contains scripts for training, evaluation, and explanation
 
 
 ```bash
-data/
+Data/
 ├── ClimateViz.csv                # Full dataset with all claims and annotations
 ├── ClimateViz_train.csv          # Training split (70%)
 ├── ClimateViz_dev.csv            # Development/validation split (10%)
