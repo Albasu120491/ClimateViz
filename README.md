@@ -4,7 +4,7 @@
 
 **ClimateViz** is the first large-scale benchmark for scientific fact-checking grounded in real-world, expert-curated climate charts. It challenges models to perform complex statistical reasoning over visual data, supporting structured explanation via knowledge graphs. The benchmark contains **49,862 claims** aligned with **2,896 scientific charts**, each annotated with a fact-checking label (`support`, `refute`, `not enough information`) and a structured explanation graph.
 
-📄 If you use the ClimateViz dataset or benchmark in your research, please cite our paper:
+📄 If you use or cite the ClimateViz benchmark in your research, please cite our paper:
 
 > Su, R., Si, J., Guo, Z., & Pierrehumbert, J. (2025). *ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts*. arXiv preprint [arXiv:2506.08700](https://arxiv.org/abs/2506.08700).
 
