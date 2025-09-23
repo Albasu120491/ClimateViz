@@ -1,4 +1,5 @@
 # 🌍 ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts
+<meta name="google-site-verification" content="0kR-6pPvd_PMGQZQq9dhBAhCvHcSZR71NVcT0UJTA3o" />
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
